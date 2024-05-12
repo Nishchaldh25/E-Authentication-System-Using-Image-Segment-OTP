@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>colour_blue</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+      <h1><a href="index.html">E Authentication System Using Image Segment & OTP
+<span class="logo_colour"></span></a></h1>
+  
+        </div>
+      </div>
+
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li class="selected"><a href="index.html">Home</a></li>
+          <li><a href="signup.html">User Registration</a></li>
+          <li><a href="login.html">User Login</a></li>
+          </ul>
+      </div>
+    </div>
+    <div id="site_content">
+      <div class="sidebar">
+        <!-- insert your sidebar items here -->
+        
+        
+        
+      </div>
+      <div id="content">
+        <!-- insert the page content here -->
+        <h1>About Project</h1>
+        <p>
+The project allows user to input an image as its password and only user knows what the image looks like as a whole. On receiving the image, the system segments the image into an array of images and stores them accordingly. The next time user logs on to the system the segmented image is received by the system in a jumbled order. Now if user chooses the parts of image in an order so as to make the original image he sent then user is considered authentic. Else the user is not granted access. The system uses image segmentation based on  coordinates. The coordinates of the segmented image allow the system to fragment the image and store it in different parts. Actually system segments the image into a grid and stores each part accordingly in order. But while logging in the image is shown as broken and in a jumbled order. At this time only the user who provided the image knows what the actual image looks like and he must the parts in horizontal direction from left to right one row at a time according to the order in which parts were arranged in the original image. So the user is granted access after successful attempt.      </p>
+      </div>
+    </div>
+    <div id="content_footer"></div>
+    <div id="footer">
+      
+    </div>
+  </div>
+</body>
+</html>
