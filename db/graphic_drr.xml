@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 3.3.9
+- http://www.phpmyadmin.net
+-
+- Host: localhost
+- Generation Time: Mar 07, 2020 at 09:47 AM
+- Server version: 5.5.8
+- PHP Version: 5.3.5
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="http://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="graphic_drr" collation="latin1_swedish_ci" charset="latin1">
+            <pma:table name="add_query">
+                CREATE TABLE `add_query` (
+                  `q_id` varchar(20) NOT NULL,
+                  `name` varchar(23) NOT NULL,
+                  `subject` varchar(34) NOT NULL,
+                  `email` varchar(22) NOT NULL,
+                  `phno` varchar(20) NOT NULL,
+                  `comments` text NOT NULL
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="admin">
+                CREATE TABLE `admin` (
+                  `username` varchar(34) NOT NULL,
+                  `password` varchar(32) NOT NULL
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="feedback">
+                CREATE TABLE `feedback` (
+                  `name` varchar(23) NOT NULL,
+                  `q1` varchar(22) NOT NULL,
+                  `q2` varchar(21) NOT NULL,
+                  `q3` varchar(24) NOT NULL,
+                  `q4` varchar(23) NOT NULL,
+                  `q5` varchar(22) NOT NULL
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="myimage">
+                CREATE TABLE `myimage` (
+                  `img_id` varchar(34) NOT NULL,
+                  `image_name` varchar(34) NOT NULL
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="user">
+                CREATE TABLE `user` (
+                  `username` varchar(23) NOT NULL,
+                  `password` varchar(21) NOT NULL,
+                  `name` varchar(22) NOT NULL,
+                  `clg` varchar(23) NOT NULL,
+                  `email` varchar(21) NOT NULL,
+                  `phone` varchar(24) NOT NULL,
+                  `userimage` varchar(25) NOT NULL,
+                  `image1` varchar(25) NOT NULL,
+                  `image2` varchar(21) NOT NULL,
+                  `image3` varchar(25) NOT NULL,
+                  `image4` varchar(26) NOT NULL
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'graphic_drr'
+    -->
+    <database name="graphic_drr">
+        <!-- Table add_query -->
+        <!-- Table admin -->
+        <table name="admin">
+            <column name="username">admin</column>
+            <column name="password">admin</column>
+        </table>
+        <!-- Table feedback -->
+        <!-- Table myimage -->
+        <table name="myimage">
+            <column name="img_id">23384</column>
+            <column name="image_name">contact.png</column>
+        </table>
+        <table name="myimage">
+            <column name="img_id">82458</column>
+            <column name="image_name">feature-pic2.jpg</column>
+        </table>
+        <table name="myimage">
+            <column name="img_id">51915</column>
+            <column name="image_name">team4.jpg</column>
+        </table>
+        <table name="myimage">
+            <column name="img_id">75741</column>
+            <column name="image_name">3.jpg</column>
+        </table>
+        <!-- Table user -->
+        <table name="user">
+            <column name="username">abc</column>
+            <column name="password">abc</column>
+            <column name="name">mukund</column>
+            <column name="clg">abc</column>
+            <column name="email">abc@gmail.com</column>
+            <column name="phone">9743777001</column>
+            <column name="userimage">default.jpg</column>
+            <column name="image1">feature-pic2.jpg</column>
+            <column name="image2">team4.jpg</column>
+            <column name="image3">3.jpg</column>
+            <column name="image4">contact.png</column>
+        </table>
+        <table name="user">
+            <column name="username">aaa</column>
+            <column name="password">aaa</column>
+            <column name="name">aaa</column>
+            <column name="clg">aaa</column>
+            <column name="email">aaa@gmail.com</column>
+            <column name="phone">9743122341</column>
+            <column name="userimage">default.jpg</column>
+            <column name="image1">team4.jpg</column>
+            <column name="image2">team4.jpg</column>
+            <column name="image3">team4.jpg</column>
+            <column name="image4">team4.jpg</column>
+        </table>
+    </database>
+</pma_xml_export>
